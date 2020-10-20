@@ -1,0 +1,23 @@
+{
+    "compKeys": ["AcquisitionTime", "SeriesNumber", "SidecarFilename"],
+    "descriptions": [
+        {
+            "dataType": "anat",
+            "suffix": "T1w",
+            "criteria": {
+               "equal": {"SeriesDescription": "SAG_FSPGR_BRAVO"}
+            }
+        },
+
+        {
+            "dataType": "func",
+            "suffix": "bold",
+            "criteria": {
+                "equal": {"RepetitionTime": 2}
+            },
+            "customHeader": {
+                "TaskName": "localiser"
+            }
+        }
+    ]
+}

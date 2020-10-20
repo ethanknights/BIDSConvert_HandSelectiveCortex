@@ -1,0 +1,33 @@
+{
+    "compKeys": ["AcquisitionTime", "SeriesNumber", "SidecarFilename"],
+    "descriptions": [
+        {
+            "dataType": "anat",
+            "suffix": "T1w",
+            "criteria": {
+               "equal": {"SeriesDescription": "SAG_FSPGR_BRAVO"}
+            }
+        },
+
+
+        {
+            "dataType": "anat",
+            "suffix": "T1w",
+            "criteria": {
+               "equal": {"SeriesDescription": "SAG_FSPGR_BRAVO_from_cann_study"}
+            }
+        },
+        
+
+        {
+            "dataType": "func",
+            "suffix": "bold",
+            "criteria": {
+                "equal": {"RepetitionTime": 2}
+            },
+            "customHeader": {
+                "TaskName": "grasp"
+            }
+        }
+    ]
+}
