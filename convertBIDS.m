@@ -244,6 +244,18 @@ end
 
 
 %-- Deface --%
+% Ethans-MacBook-Air:scripts ethanknights$ pip show pydeface
+% Name: pydeface
+% Version: 2.0.0
+% Summary: A script to remove facial structure from MRI images.
+% Home-page: http://poldracklab.org
+% Author: None
+% Author-email: None
+% License: MIT
+% Location: /Users/ethanknights/anaconda3/lib/python3.6/site-packages
+% Requires: numpy, nibabel, nipype
+% Required-by: 
+
 if ~done_deface
 sessIDList = {'action','localiser'};
 
@@ -266,9 +278,7 @@ sessIDList = {'action','localiser'};
     end
   end
 end
- %---- END ---%
- 
- 
+%---- END ---%
 
 return
   
@@ -348,12 +358,10 @@ end
 diary off
 
 
-
-
   %%%---- CLEAN LAPTOP ----%
   %%%rmdir(tmpDir,'s')
   
-  
+  %--- NOTES ---%
   %export PATH="$PATH://Users/ethanknights/imaging/software"
   
   %cmdStr = sprintf('dcm2bids -d %s -p %s -c %s',tmpDir,sName,configFilePath)
